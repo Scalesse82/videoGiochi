@@ -66,6 +66,8 @@ public class GiocoController {
 	public ModelAndView filta(@RequestParam("categoria") int cat, @RequestParam("field") int field) {
 
 		List<Gioco> lista = null;
+		
+		
 		switch (cat) {
 		case 0:
 			switch (field) {
@@ -148,6 +150,23 @@ public class GiocoController {
 				break;
 			case 2:
 				lista = service.findByCategoriaOrderByPrezzoDesc(Categoria.RPG);
+
+				break;
+			}
+
+			break;
+		case 5:
+			switch (field) {
+			case 0:
+				lista = service.findByOrderByTitoloDesc();
+
+				break;
+			case 1:
+				lista = service.findByOrderByPegiDesc();
+
+				break;
+			case 2:
+				lista = service.findByOrderByPrezzoDesc();
 
 				break;
 			}

@@ -17,7 +17,7 @@
 		<form action="filtra">
 			 
 			 seleziona la categoria:<br><br>
-			<input type="radio" name="categoria" value="0"> 
+			<input type="radio" name="categoria" value="0" > 
 			<label	for="horror">HORROR</label><br> 
 			<input type="radio" name="categoria" value="1"> 
 			<label for="sport">SPORT</label><br>
@@ -27,10 +27,12 @@
 			<label for="action">ACTION</label><br>
 			<input type="radio" name="categoria" value="4"> 
 			<label for="rps">RPG</label><br>
+			<input type="radio" name="categoria" value="5" checked="checked"> 
+			<label for="rps">Tutte le categorie</label><br><br>
 			
 			seleziona il filtro:<br><br>
 			
-			<input type="radio" name="field" value="0"> 
+			<input type="radio" name="field" value="0" checked="checked"> 
 			<label	for="titolo">titolo</label><br> 
 			<input type="radio" name="field" value="1"> 
 			<label for="pegi">pegi</label><br>

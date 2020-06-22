@@ -18,5 +18,13 @@ public interface GiocoRepository extends CrudRepository<Gioco, Long> {
 
 	public List<Gioco> findByCategoriaOrderByPrezzoDesc(Categoria categoria);
 
+	public List<Gioco> findByOrderByPrezzoDesc();
+	
+	public List<Gioco> findByOrderByTitoloDesc();
+	
+	public List<Gioco> findByOrderByPegiDesc();
+
+
+
 
 }

@@ -50,5 +50,23 @@ public List<Gioco> findByCategoriaOrderByPrezzoDesc(Categoria categoria){
 	return giocoRepository.findByCategoriaOrderByPrezzoDesc(categoria);
 	
 }
+
+public List<Gioco> findByOrderByPrezzoDesc(){
+	
+	return giocoRepository.findByOrderByPrezzoDesc();
+	
+}
+
+public List<Gioco> findByOrderByTitoloDesc(){
+	
+	return giocoRepository.findByOrderByTitoloDesc();
+	
+}
+
+public List<Gioco> findByOrderByPegiDesc(){
+	
+	return giocoRepository.findByOrderByPegiDesc();
+	
+}
 	
 }
